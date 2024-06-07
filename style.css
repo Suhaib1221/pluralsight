@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d0f12;
+    color: white;
+    overflow: auto;
+    font-weight: 300px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* margin-top: 50px; */
+}
+
+#right {
+    flex: 6;
+}
+
+/* sign in */
+
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+.signin .logo {
+    margin-bottom: 8vh;
+    margin-top: 8vh;
+}
+
+.signin .logo img {
+    width: 300px;
+}
+
+.signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+/* Primaru button  */
+
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #f96816;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background-color: #ff7b39;
+}
+
+.secondary-btn {
+    padding: 7px 16px;
+    height: 2.7rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* font-size: 16px;
+    letter-spacing: .01em;
+    padding: 10px 16px;
+    height: 40px; */
+}
+
+
+.secondary-btn:hover {
+    border-color: #ff7b39;
+    color: #ff7b39;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    /* color: rgba(38, 38, 121, 0.589); */
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+#singin .secondary-btn,
+.secondary-btn,
+.or,
+link {
+    width: 70%;
+}
+
+.or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+
+}
+
+.bar {
+    border: none;
+    flex: auto;
+    height: 1px;
+    background: #aaa;
+}
+
+
+
+/* ........................right....................... */
+
+.showcase {
+    height: 100vh;
+    background-image: url(img/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.showcase .showcase-text {
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 65px;
+    /* font-weight: 500; */
+}
+
+.bar {
+    display: block;
+}
+
+
+
+
+
+
+
+/* ...................footer.................. */
+
+.main-footer {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.main-footer p{
+    margin-bottom: 15px;
+}
+
+.main-footer .footer-links {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.5vh;
+}
+
+.main-footer .footer-links a {
+    color: #f96816;
+}
+
+.main-footer .footer-links a:hover {
+    color: #0084bd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+@media(max-width:768px) {
+    body {
+        overflow: auto;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #lef {
+        justify-content: start;
+        margin-top: 2vh;
+    }
+
+    #singin .logo {
+        margin-bottom: 2vh;
+    }
+
+    #singin .text-input {
+        margin-bottom: 0.7rem;
+    }
+
+
+}
+
+@media(min-widh:1200px) {
+    #left {
+        flex: 4;
+    }
+
+    #right {
+        flex: 6;
+    }
+}
